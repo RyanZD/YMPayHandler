@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import <UMSocial.h>
+#import <WXApi.h>
+#import "YimaiPayManager.h"
 
 @interface AppDelegate ()
 
@@ -23,7 +26,17 @@
     self.window.rootViewController = [[ViewController alloc]init];
     [self.window makeKeyAndVisible];
     
+    [WXApi registerApp:@"wxb4ba3c02aa476ea1"];
+    
     return YES;
+}
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    return  [UMSocialSnsService handleOpenURL:url wxApiDelegate:[YimaiPayManager sharedManager]];
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    return [UMSocialSnsService handleOpenURL:url wxApiDelegate:[YimaiPayManager sharedManager]];
 }
 
 
