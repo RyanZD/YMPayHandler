@@ -10,9 +10,9 @@
 		3D3FB40B1DB9BDEA00C5F4F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3FB40A1DB9BDEA00C5F4F1 /* main.m */; };
 		3D3FB40E1DB9BDEA00C5F4F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3FB40D1DB9BDEA00C5F4F1 /* AppDelegate.m */; };
 		3D3FB4111DB9BDEA00C5F4F1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3FB4101DB9BDEA00C5F4F1 /* ViewController.m */; };
-		3D3FB4141DB9BDEA00C5F4F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D3FB4121DB9BDEA00C5F4F1 /* Main.storyboard */; };
 		3D3FB4161DB9BDEA00C5F4F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D3FB4151DB9BDEA00C5F4F1 /* Assets.xcassets */; };
 		3D3FB4191DB9BDEA00C5F4F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D3FB4171DB9BDEA00C5F4F1 /* LaunchScreen.storyboard */; };
+		C2F3B4110F8AEEF5C134A929 /* libPods-YMPayHandlerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C443480E037DCB10AB9B36B /* libPods-YMPayHandlerDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +22,12 @@
 		3D3FB40D1DB9BDEA00C5F4F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3D3FB40F1DB9BDEA00C5F4F1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3D3FB4101DB9BDEA00C5F4F1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		3D3FB4131DB9BDEA00C5F4F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D3FB4151DB9BDEA00C5F4F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D3FB4181DB9BDEA00C5F4F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D3FB41A1DB9BDEA00C5F4F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DACA975DB3A3098FDF51C94 /* Pods-YMPayHandlerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YMPayHandlerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-YMPayHandlerDemo/Pods-YMPayHandlerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		7C443480E037DCB10AB9B36B /* libPods-YMPayHandlerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YMPayHandlerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD695F24D0ED1D26FE9A96B4 /* Pods-YMPayHandlerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YMPayHandlerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YMPayHandlerDemo/Pods-YMPayHandlerDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2F3B4110F8AEEF5C134A929 /* libPods-YMPayHandlerDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23DF61537E47B77134C5D224 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C443480E037DCB10AB9B36B /* libPods-YMPayHandlerDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		375566D5E5805CC448DF4572 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD695F24D0ED1D26FE9A96B4 /* Pods-YMPayHandlerDemo.debug.xcconfig */,
+				6DACA975DB3A3098FDF51C94 /* Pods-YMPayHandlerDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3D3FB3FD1DB9BDE900C5F4F1 = {
 			isa = PBXGroup;
 			children = (
 				3D3FB4081DB9BDEA00C5F4F1 /* YMPayHandlerDemo */,
 				3D3FB4071DB9BDEA00C5F4F1 /* Products */,
+				375566D5E5805CC448DF4572 /* Pods */,
+				23DF61537E47B77134C5D224 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,7 +84,6 @@
 				3D3FB40D1DB9BDEA00C5F4F1 /* AppDelegate.m */,
 				3D3FB40F1DB9BDEA00C5F4F1 /* ViewController.h */,
 				3D3FB4101DB9BDEA00C5F4F1 /* ViewController.m */,
-				3D3FB4121DB9BDEA00C5F4F1 /* Main.storyboard */,
 				3D3FB4151DB9BDEA00C5F4F1 /* Assets.xcassets */,
 				3D3FB4171DB9BDEA00C5F4F1 /* LaunchScreen.storyboard */,
 				3D3FB41A1DB9BDEA00C5F4F1 /* Info.plist */,
@@ -86,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D3FB41D1DB9BDEA00C5F4F1 /* Build configuration list for PBXNativeTarget "YMPayHandlerDemo" */;
 			buildPhases = (
+				F60F0879C31B5A42FB957FA8 /* [CP] Check Pods Manifest.lock */,
 				3D3FB4021DB9BDEA00C5F4F1 /* Sources */,
 				3D3FB4031DB9BDEA00C5F4F1 /* Frameworks */,
 				3D3FB4041DB9BDEA00C5F4F1 /* Resources */,
+				CB18053C28FE4DE79A1F4B9A /* [CP] Embed Pods Frameworks */,
+				001B793199511614C4465C12 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -139,11 +163,58 @@
 			files = (
 				3D3FB4191DB9BDEA00C5F4F1 /* LaunchScreen.storyboard in Resources */,
 				3D3FB4161DB9BDEA00C5F4F1 /* Assets.xcassets in Resources */,
-				3D3FB4141DB9BDEA00C5F4F1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		001B793199511614C4465C12 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YMPayHandlerDemo/Pods-YMPayHandlerDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB18053C28FE4DE79A1F4B9A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YMPayHandlerDemo/Pods-YMPayHandlerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F60F0879C31B5A42FB957FA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3D3FB4021DB9BDEA00C5F4F1 /* Sources */ = {
@@ -159,14 +230,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3D3FB4121DB9BDEA00C5F4F1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3D3FB4131DB9BDEA00C5F4F1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3D3FB4171DB9BDEA00C5F4F1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -268,6 +331,7 @@
 		};
 		3D3FB41E1DB9BDEA00C5F4F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD695F24D0ED1D26FE9A96B4 /* Pods-YMPayHandlerDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YMPayHandlerDemo/Info.plist;
@@ -279,6 +343,7 @@
 		};
 		3D3FB41F1DB9BDEA00C5F4F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DACA975DB3A3098FDF51C94 /* Pods-YMPayHandlerDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YMPayHandlerDemo/Info.plist;
@@ -307,6 +372,7 @@
 				3D3FB41F1DB9BDEA00C5F4F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
