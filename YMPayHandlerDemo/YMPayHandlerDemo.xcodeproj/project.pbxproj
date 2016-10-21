@@ -13,6 +13,12 @@
 		3D3FB4161DB9BDEA00C5F4F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D3FB4151DB9BDEA00C5F4F1 /* Assets.xcassets */; };
 		3D3FB4191DB9BDEA00C5F4F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D3FB4171DB9BDEA00C5F4F1 /* LaunchScreen.storyboard */; };
 		3D3FB4251DB9E8F200C5F4F1 /* YimaiPayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3FB4241DB9E8F200C5F4F1 /* YimaiPayManager.m */; };
+		3D3FB4271DB9FC9A00C5F4F1 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3FB4261DB9FC9A00C5F4F1 /* CoreTelephony.framework */; };
+		3D3FB4291DB9FCA600C5F4F1 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3FB4281DB9FCA600C5F4F1 /* libz.tbd */; };
+		3D3FB42B1DB9FCB200C5F4F1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3FB42A1DB9FCB200C5F4F1 /* SystemConfiguration.framework */; };
+		3D3FB42D1DB9FCBF00C5F4F1 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3FB42C1DB9FCBF00C5F4F1 /* libsqlite3.0.tbd */; };
+		3D3FB42F1DB9FCCB00C5F4F1 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3FB42E1DB9FCCB00C5F4F1 /* libc++.tbd */; };
+		3D3FB4311DB9FDAC00C5F4F1 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3FB4301DB9FDAC00C5F4F1 /* libWeChatSDK.a */; };
 		C2F3B4110F8AEEF5C134A929 /* libPods-YMPayHandlerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C443480E037DCB10AB9B36B /* libPods-YMPayHandlerDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +34,12 @@
 		3D3FB41A1DB9BDEA00C5F4F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D3FB4231DB9E8F200C5F4F1 /* YimaiPayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YimaiPayManager.h; sourceTree = "<group>"; };
 		3D3FB4241DB9E8F200C5F4F1 /* YimaiPayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YimaiPayManager.m; sourceTree = "<group>"; };
+		3D3FB4261DB9FC9A00C5F4F1 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		3D3FB4281DB9FCA600C5F4F1 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		3D3FB42A1DB9FCB200C5F4F1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3D3FB42C1DB9FCBF00C5F4F1 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		3D3FB42E1DB9FCCB00C5F4F1 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		3D3FB4301DB9FDAC00C5F4F1 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = Pods/UMengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/Wechat/libWeChatSDK.a; sourceTree = "<group>"; };
 		6DACA975DB3A3098FDF51C94 /* Pods-YMPayHandlerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YMPayHandlerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-YMPayHandlerDemo/Pods-YMPayHandlerDemo.release.xcconfig"; sourceTree = "<group>"; };
 		7C443480E037DCB10AB9B36B /* libPods-YMPayHandlerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YMPayHandlerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD695F24D0ED1D26FE9A96B4 /* Pods-YMPayHandlerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YMPayHandlerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YMPayHandlerDemo/Pods-YMPayHandlerDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -38,6 +50,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D3FB42F1DB9FCCB00C5F4F1 /* libc++.tbd in Frameworks */,
+				3D3FB42D1DB9FCBF00C5F4F1 /* libsqlite3.0.tbd in Frameworks */,
+				3D3FB42B1DB9FCB200C5F4F1 /* SystemConfiguration.framework in Frameworks */,
+				3D3FB4291DB9FCA600C5F4F1 /* libz.tbd in Frameworks */,
+				3D3FB4271DB9FC9A00C5F4F1 /* CoreTelephony.framework in Frameworks */,
+				3D3FB4311DB9FDAC00C5F4F1 /* libWeChatSDK.a in Frameworks */,
 				C2F3B4110F8AEEF5C134A929 /* libPods-YMPayHandlerDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,6 +66,12 @@
 		23DF61537E47B77134C5D224 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3D3FB4301DB9FDAC00C5F4F1 /* libWeChatSDK.a */,
+				3D3FB42E1DB9FCCB00C5F4F1 /* libc++.tbd */,
+				3D3FB42C1DB9FCBF00C5F4F1 /* libsqlite3.0.tbd */,
+				3D3FB42A1DB9FCB200C5F4F1 /* SystemConfiguration.framework */,
+				3D3FB4281DB9FCA600C5F4F1 /* libz.tbd */,
+				3D3FB4261DB9FC9A00C5F4F1 /* CoreTelephony.framework */,
 				7C443480E037DCB10AB9B36B /* libPods-YMPayHandlerDemo.a */,
 			);
 			name = Frameworks;
@@ -340,9 +364,14 @@
 			baseConfigurationReference = DD695F24D0ED1D26FE9A96B4 /* Pods-YMPayHandlerDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = YMPayHandlerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/UMengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/Wechat",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = zhangr.YMPayHandlerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -353,9 +382,14 @@
 			baseConfigurationReference = 6DACA975DB3A3098FDF51C94 /* Pods-YMPayHandlerDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = YMPayHandlerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/UMengSocialCOM/Umeng_SDK_Social_iOS_ARM64_5.2.1/UMSocial_Sdk_Extra_Frameworks/Wechat",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = zhangr.YMPayHandlerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
