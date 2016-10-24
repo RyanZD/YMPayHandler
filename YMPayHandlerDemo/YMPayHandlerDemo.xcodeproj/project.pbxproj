@@ -163,6 +163,7 @@
 				TargetAttributes = {
 					3D3FB4051DB9BDEA00C5F4F1 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 25PZTF59NG;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -364,6 +365,7 @@
 			baseConfigurationReference = DD695F24D0ED1D26FE9A96B4 /* Pods-YMPayHandlerDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 25PZTF59NG;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = YMPayHandlerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -382,6 +384,7 @@
 			baseConfigurationReference = 6DACA975DB3A3098FDF51C94 /* Pods-YMPayHandlerDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 25PZTF59NG;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = YMPayHandlerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

@@ -26,19 +26,28 @@
     self.window.rootViewController = [[ViewController alloc]init];
     [self.window makeKeyAndVisible];
     
+    /** 微信注册 */
     [WXApi registerApp:@"wxb4ba3c02aa476ea1"];
     
     return YES;
 }
 
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
-    return  [UMSocialSnsService handleOpenURL:url wxApiDelegate:[YimaiPayManager sharedManager]];
+    return [self applicationOpenURL:url];
 }
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-    return [UMSocialSnsService handleOpenURL:url wxApiDelegate:[YimaiPayManager sharedManager]];
+    return [self applicationOpenURL:url];
 }
 
+/** openURL 调起方法 */
+- (BOOL)applicationOpenURL:(NSURL *)url{//因为友盟分享注册wxdelegate不起作用
+    
+    if([[url absoluteString] rangeOfString:@"wxb4ba3c02aa476ea1://pay"].location == 0)
+        return [WXApi handleOpenURL:url delegate:[YimaiPayManager sharedManager]];
+    else
+        return [UMSocialSnsService handleOpenURL:url wxApiDelegate:[YimaiPayManager sharedManager]];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

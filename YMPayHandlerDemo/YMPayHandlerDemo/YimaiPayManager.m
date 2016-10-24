@@ -22,29 +22,18 @@
 }
 
 #pragma mark - 微信支付相关
+
 /** 微信支付 */
 - (void)wxPay{
 
-    //测试数据 -- 假数据 来自wxDemo  一次性的
-    /*
-     {
-     appid = wxb4ba3c02aa476ea1;
-     noncestr = fead6f555e77e0cb0da72c0265c1d001;
-     package = "Sign=WXPay";
-     partnerid = 1305176001;
-     prepayid = wx20161013155503a11ffea9bc0082940286;
-     sign = 55DFD1A437FDCCE9D37979316DEE2ABF;
-     timestamp = 1476345303;
-     }
-     */
     NSDictionary *dict = @{
                            @"appid":@"wxb4ba3c02aa476ea1",
-                           @"noncestr":@"fead6f555e77e0cb0da72c0265c1d001",
+                           @"noncestr":@"ce75e026c2c3df690f3aacc043ed0a58",
                            @"package":@"Sign=WXPay",
                            @"partnerid":@"1305176001",
-                           @"prepayid":@"wx20161013155503a11ffea9bc0082940286",
-                           @"sign":@"55DFD1A437FDCCE9D37979316DEE2ABF",
-                           @"timestamp":@"1476345303"
+                           @"prepayid":@"wx20161024133948178cf5dcda0196405292",
+                           @"sign":@"571F5581C6CDC17C2FF7CEEFBB302EB6",
+                           @"timestamp":@"1477287589"
                            };
     NSMutableString *stamp  = [dict objectForKey:@"timestamp"];
     //调起微信支付
