@@ -1,2 +1,2 @@
 # YMPayHandler
-医脉支付组件
+YM支付集成组件
