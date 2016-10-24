@@ -10,7 +10,7 @@
 #import <WXApi.h>
 
 /** 支付工具类 */
-@interface YimaiPayManager : NSObject<WXApiDelegate>
+@interface YMPayManager : NSObject<WXApiDelegate>
 
 /** 单例 */
 + (instancetype)sharedManager;

@@ -6,17 +6,17 @@
 //  Copyright © 2016年 张锐. All rights reserved.
 //
 
-#import "YimaiPayManager.h"
+#import "YMPayManager.h"
 
-@implementation YimaiPayManager
+@implementation YMPayManager
 
 /** 单例 */
 + (instancetype)sharedManager{
 
-    static YimaiPayManager *sharedInstance = nil;
+    static YMPayManager *sharedInstance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        sharedInstance = [[YimaiPayManager alloc]init];
+        sharedInstance = [[YMPayManager alloc]init];
     });
     return sharedInstance;
 }

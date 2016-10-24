@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "YimaiPayManager.h"
+#import "YMPayManager.h"
 
 @interface ViewController ()
 
@@ -39,7 +39,7 @@
 - (void)wxPayButtonClick{
 
     NSLog(@"微信按钮支付点击");
-    [[YimaiPayManager sharedManager]wxPay];
+    [[YMPayManager sharedManager]wxPay];
 }
 
 #pragma mark - setters & getters

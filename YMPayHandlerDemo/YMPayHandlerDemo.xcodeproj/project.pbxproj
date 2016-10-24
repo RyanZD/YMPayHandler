@@ -12,7 +12,7 @@
 		3D3FB4111DB9BDEA00C5F4F1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3FB4101DB9BDEA00C5F4F1 /* ViewController.m */; };
 		3D3FB4161DB9BDEA00C5F4F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D3FB4151DB9BDEA00C5F4F1 /* Assets.xcassets */; };
 		3D3FB4191DB9BDEA00C5F4F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D3FB4171DB9BDEA00C5F4F1 /* LaunchScreen.storyboard */; };
-		3D3FB4251DB9E8F200C5F4F1 /* YimaiPayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3FB4241DB9E8F200C5F4F1 /* YimaiPayManager.m */; };
+		3D3FB4251DB9E8F200C5F4F1 /* YMPayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3FB4241DB9E8F200C5F4F1 /* YMPayManager.m */; };
 		3D3FB4271DB9FC9A00C5F4F1 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3FB4261DB9FC9A00C5F4F1 /* CoreTelephony.framework */; };
 		3D3FB4291DB9FCA600C5F4F1 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3FB4281DB9FCA600C5F4F1 /* libz.tbd */; };
 		3D3FB42B1DB9FCB200C5F4F1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3FB42A1DB9FCB200C5F4F1 /* SystemConfiguration.framework */; };
@@ -32,8 +32,8 @@
 		3D3FB4151DB9BDEA00C5F4F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D3FB4181DB9BDEA00C5F4F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D3FB41A1DB9BDEA00C5F4F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3D3FB4231DB9E8F200C5F4F1 /* YimaiPayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YimaiPayManager.h; sourceTree = "<group>"; };
-		3D3FB4241DB9E8F200C5F4F1 /* YimaiPayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YimaiPayManager.m; sourceTree = "<group>"; };
+		3D3FB4231DB9E8F200C5F4F1 /* YMPayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMPayManager.h; sourceTree = "<group>"; };
+		3D3FB4241DB9E8F200C5F4F1 /* YMPayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMPayManager.m; sourceTree = "<group>"; };
 		3D3FB4261DB9FC9A00C5F4F1 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		3D3FB4281DB9FCA600C5F4F1 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		3D3FB42A1DB9FCB200C5F4F1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -111,8 +111,8 @@
 				3D3FB40D1DB9BDEA00C5F4F1 /* AppDelegate.m */,
 				3D3FB40F1DB9BDEA00C5F4F1 /* ViewController.h */,
 				3D3FB4101DB9BDEA00C5F4F1 /* ViewController.m */,
-				3D3FB4231DB9E8F200C5F4F1 /* YimaiPayManager.h */,
-				3D3FB4241DB9E8F200C5F4F1 /* YimaiPayManager.m */,
+				3D3FB4231DB9E8F200C5F4F1 /* YMPayManager.h */,
+				3D3FB4241DB9E8F200C5F4F1 /* YMPayManager.m */,
 				3D3FB4151DB9BDEA00C5F4F1 /* Assets.xcassets */,
 				3D3FB4171DB9BDEA00C5F4F1 /* LaunchScreen.storyboard */,
 				3D3FB41A1DB9BDEA00C5F4F1 /* Info.plist */,
@@ -253,7 +253,7 @@
 			files = (
 				3D3FB4111DB9BDEA00C5F4F1 /* ViewController.m in Sources */,
 				3D3FB40E1DB9BDEA00C5F4F1 /* AppDelegate.m in Sources */,
-				3D3FB4251DB9E8F200C5F4F1 /* YimaiPayManager.m in Sources */,
+				3D3FB4251DB9E8F200C5F4F1 /* YMPayManager.m in Sources */,
 				3D3FB40B1DB9BDEA00C5F4F1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

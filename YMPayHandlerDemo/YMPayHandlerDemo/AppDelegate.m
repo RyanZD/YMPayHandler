@@ -10,7 +10,7 @@
 #import "ViewController.h"
 #import <UMSocial.h>
 #import <WXApi.h>
-#import "YimaiPayManager.h"
+#import "YMPayManager.h"
 
 @interface AppDelegate ()
 
@@ -44,9 +44,9 @@
 - (BOOL)applicationOpenURL:(NSURL *)url{//因为友盟分享注册wxdelegate不起作用
     
     if([[url absoluteString] rangeOfString:@"wxb4ba3c02aa476ea1://pay"].location == 0)
-        return [WXApi handleOpenURL:url delegate:[YimaiPayManager sharedManager]];
+        return [WXApi handleOpenURL:url delegate:[YMPayManager sharedManager]];
     else
-        return [UMSocialSnsService handleOpenURL:url wxApiDelegate:[YimaiPayManager sharedManager]];
+        return [UMSocialSnsService handleOpenURL:url wxApiDelegate:[YMPayManager sharedManager]];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
